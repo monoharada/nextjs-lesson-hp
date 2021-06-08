@@ -2,6 +2,8 @@ import Layout from "../components/Layout"
 import Post from "../components/Post"
 import {getAllPostData} from "../lib/posts"
 
+
+
 export default function Blog({posts}) {
   return (
     <Layout title="Blog">
