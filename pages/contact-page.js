@@ -1,6 +1,6 @@
 import Layout from "../components/Layout"
 
-const Contact = () => {
+export default function Contact() {
   const personInfo = [
     {
       head:'Address',
@@ -88,4 +88,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+
