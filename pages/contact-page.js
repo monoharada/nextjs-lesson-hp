@@ -1,7 +1,9 @@
 import Layout from "../components/Layout"
-import Image from "next/Image"
+import Image from "next/image"
 
-
+const myLoader = ({ src, width, quality }) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+}
 
 export default function Contact() {
   const personInfo = [
@@ -29,6 +31,7 @@ export default function Contact() {
         </div>
         <div className="mt-4 flex justify-center">
         <Image
+            loader={'next/image'}
             className="rounded-full"
             src="/avatar/avatar.jpg"
             width={60}
