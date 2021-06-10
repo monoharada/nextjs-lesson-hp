@@ -1,0 +1,9 @@
+{
+  "builds": [
+    {
+      "src": "auth.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [{ "src": "/.*", "dest": "auth.js" }]
+}
