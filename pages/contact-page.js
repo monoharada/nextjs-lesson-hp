@@ -1,4 +1,5 @@
 import Layout from "../components/Layout"
+import Image from "next/Image"
 
 
 
@@ -25,6 +26,15 @@ export default function Contact() {
         </div>
         <div className="mt-4 flex justify-center">
             <img src="/avatar/avatar.jpg" alt="hoge"  width="60" height="60"/>
+        </div>
+        <div className="mt-4 flex justify-center">
+        <Image
+            className="rounded-full"
+            src="/avatar/avatar.jpg"
+            width={60}
+            height={60}
+            alt="Avatar"
+            />
         </div>
         <div className="mt-4">
         {personInfo.map((item,idx) => (
